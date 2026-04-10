@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.3rem;
+  }
+  
+  body {
+    @apply bg-tactical-bg-primary text-gray-100;
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer utilities {
+  .tactical-panel {
+    @apply bg-tactical-bg-secondary border border-tactical-olive-700 rounded-md shadow-lg;
+  }
+  
+  .tactical-grid {
+    @apply bg-tactical-bg-tertiary border-2 border-tactical-olive-700;
+  }
+  
+  .glow-blue {
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 10px rgba(211, 47, 47, 0.4);
+  }
+  
+  .glow-orange {
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.4);
+  }
+  
+  .scanline {
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(74, 144, 226, 0.03) 50%
+    );
+    background-size: 100% 4px;
+    animation: scanline 8s linear infinite;
+  }
+  
+  @keyframes scanline {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+}
