@@ -8,7 +8,6 @@ A turn-based tactical AI game demonstrating **Minimax algorithm with Alpha-Beta 
 ![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
 
 ---
-
 ## 🚀 Quick Start
 
 ```bash
